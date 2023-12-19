@@ -12,11 +12,11 @@ function SignInUp() {
   return (
     <>
    
-
     <Card style={{width:"100%",display:"flex",flexDirection:"row"}}>
 
       <Card.Body style={{width:"40%" ,display:"flex",alignItems:"center",justifyContent:"start",flexDirection:"column",gap:"1.5rem"}}>
             <h2>Sign-In</h2>
+
             <Button className='cardButton'   variant="secondary" size="lg">
                 <FaImdb className='CardButtonIcons'/>
                 <label>Sign in with IMDB</label>
@@ -59,7 +59,6 @@ function SignInUp() {
 
 
 
-
       <Card.Body  style={{width:"60%",display:"flex",alignItems:"start",justifyContent:"start",flexDirection:"column",gap:"1.5rem"}}>
         <h2>Benefits of your free IMDb account</h2>
         <div>
@@ -87,9 +86,6 @@ function SignInUp() {
       
     </Card>
 
-    
-    
-    
   </>
   )
 }

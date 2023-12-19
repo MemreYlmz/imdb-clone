@@ -146,7 +146,6 @@ function HomePage() {
         </Carousel.Item>
 
     
-
         <Carousel.Item>
 
         </Carousel.Item>

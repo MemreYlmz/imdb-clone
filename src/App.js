@@ -5,6 +5,7 @@ import Navigation from './Navigation/Navgaiton';
 import SignInUp from './SignInUp/SignInUp';
 import SignIn from './SignIn/SignIn';
 import SignUp from './SignUp/SignUp';
+import MoviePage from './MoviePage/MoviePage';
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
       <div style={{width:"80vw", margin:"auto"  ,backgroundColor:"black",height:"100%"}}>
           {/*  Navbar */}
           {/*  Routes */}
-
+       
           <Routes>
-            <Route path="/home" element={<div><Navigation/><HomePage /></div>} />
+         {/* <Route path="/home" element={<div><Navigation/><HomePage /></div>} /> */}
+         <Route path="/movie" element={<div><Navigation/><MoviePage /></div>} />
           </Routes>
 
           <Routes>
@@ -24,6 +26,8 @@ function App() {
           </Routes>
           
       </div>
+
+
       <div>
           <Routes>
             <Route path="/signup" element={<SignUp />} />
@@ -32,6 +36,7 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
           </Routes>
       </div>
+
     </div>
   );
 }

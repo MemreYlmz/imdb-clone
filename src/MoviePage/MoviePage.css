@@ -1,0 +1,28 @@
+.MovieBackground{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.MovieBackgroundImage {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+}
+
+.MovieBackgroundImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("/src/Images/endGame.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(50px) opacity(40%);
+}
